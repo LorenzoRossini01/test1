@@ -29,31 +29,29 @@ body {
 }
 .container1 {
   max-width: 1080px;
-  position: absolute;
-  left: 0;
-  top: 10vh;
   padding: 0 15px;
   display: flex;
   overflow-x: hidden;
-  margin-bottom: 10vh;
   border-right: 10px solid rgb(71, 166, 234);
-  box-shadow: 54px 0px 75px -55px white;
 
   /* flex-wrap: wrap; */
 }
 .container2 {
   max-width: 1080px;
-  position: absolute;
-  right: 0;
-  top: 10vh;
   padding: 0 15px;
   display: flex;
   overflow-x: hidden;
-  margin-bottom: 10vh;
   border-left: 10px solid rgb(234, 144, 71);
-  box-shadow: -54px 0px 75px -55px white;
 
   /* flex-wrap: wrap; */
+}
+
+#img {
+  width: 100%;
+  background-image: url("https://gepig.com/game_cover_460w/1230.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @keyframes infiniteScroll {
@@ -80,8 +78,13 @@ body {
 }
 
 .wrapper {
-  margin: 150px;
+  margin-top: 50px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  border-bottom: 5px solid white;
+  height: 800px;
 }
 
 .debug {
@@ -134,4 +137,58 @@ body {
 .card p {
   color: white;
   font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: white;
+}
+.header-left {
+  width: calc(100vw / 6);
+}
+
+.header-middle {
+  padding-left: 8rem;
+  font-size: 1vh;
+  width: calc(100vw / 2);
+}
+
+.header-middle li {
+  padding: 0 4rem;
+  line-height: 8vh;
+}
+
+.header-middle li:hover {
+  box-shadow: 0 15px 0px 0px orangered;
+  background-color: white;
+  filter: brightness(0.95);
+}
+
+.header-right {
+  font-size: 1vh;
+  display: flex;
+  width: calc(100vw / 3);
+  justify-content: space-between;
+}
+
+.header-right li {
+  font-size: 2vh;
+  padding: 0 1rem;
+}
+
+.searching-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  border: 1px solid black;
+  border-radius: 4.5rem;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1vh;
 }
