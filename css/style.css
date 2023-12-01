@@ -34,7 +34,7 @@ body {
   top: 10vh;
   padding: 0 15px;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 10vh;
   border-right: 10px solid rgb(71, 166, 234);
   box-shadow: 54px 0px 75px -55px white;
@@ -48,11 +48,35 @@ body {
   top: 10vh;
   padding: 0 15px;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 10vh;
   border-left: 10px solid rgb(234, 144, 71);
   box-shadow: -54px 0px 75px -55px white;
+
   /* flex-wrap: wrap; */
+}
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* .container {
+  width: 100%;
+  overflow-x: hidden;
+} */
+.horizontal-scrolling-items {
+  display: flex;
+  animation-name: infiniteScroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.1, 0.05, 0.795, 0.035);
+}
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
 }
 
 .wrapper {
