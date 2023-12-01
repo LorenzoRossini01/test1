@@ -1,0 +1,113 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* UTILS */
+body {
+  background-color: #262626;
+}
+.container1 {
+  max-width: 1080px;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  padding: 0 15px;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 10vh;
+  border-right: 10px solid rgb(71, 166, 234);
+  box-shadow: 54px 0px 75px -55px white;
+
+  /* flex-wrap: wrap; */
+}
+.container2 {
+  max-width: 1080px;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  padding: 0 15px;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 10vh;
+  border-left: 10px solid rgb(234, 144, 71);
+  box-shadow: -54px 0px 75px -55px white;
+  /* flex-wrap: wrap; */
+}
+
+.wrapper {
+  margin: 150px;
+  position: relative;
+}
+
+.debug {
+  background-color: #262626;
+  padding: 2rem;
+}
+
+.debug * {
+  /* border: 2px dashed red; */
+  /* min-height: 100px; */
+}
+
+/* card */
+/* .flex-wrap {
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: grid;
+} */
+
+.card {
+  width: calc(100% / 3 - 3rem);
+  background: linear-gradient(85deg, #434343, #262626);
+  min-width: 250;
+  min-height: 500px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+}
+.card:not(:first-of-type) {
+  box-shadow: 2rem 0 3rem -2rem #000;
+}
+
+.card:hover {
+  transform: translate(-0.5rem, -1rem) rotate(3deg);
+}
+
+.card h2 {
+  color: orangered;
+  font-size: 3rem;
+}
+
+.card img {
+  margin: 2rem auto 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.card p {
+  color: white;
+  font-size: 1.5rem;
+}
