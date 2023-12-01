@@ -200,5 +200,40 @@ input[type="text"] {
 }
 
 main {
-  min-height: 20000px;
+  min-height: 2000px;
+}
+
+/* footer */
+footer {
+  color: white;
+  font-size: 2rem;
+  background-color: #3b3b3b;
+  padding: 5rem 0;
+}
+
+.container-footer {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+footer h2 {
+  color: rgb(71, 166, 234);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.col-small {
+  width: calc(100% / 5);
+  margin: 0;
+}
+
+.col-small:not(:last-of-type) {
+  border-right: 1px solid white;
 }
